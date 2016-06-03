@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-progress.sh "Checking for System Vulnaribilities...."
+progress.sh "Checking for System Vulnerabilities...."
 progress.sh "Checking for Network Loopholes...."
 progress.sh "Setting up Exploits...."
 progress.sh "Extracting Payloads...."
@@ -14,7 +14,13 @@ printf 'Enter Password: '
 read -s password
 if [ "$username" = "darkoperator" ] && [ "$password" = "password" ]; then 
     echo ' '
-    echo 'Login Succesful'
+    echo 'Login Successful'
+    sleep 0.25
+    mist_next.sh  
+fi;
+if [ "$username" = "/" ] && [ "$password" = "rootisdead" ]; then
+	echo ' '
+    echo 'Login Successful'
     sleep 0.25
     mist_next.sh  
 fi;
