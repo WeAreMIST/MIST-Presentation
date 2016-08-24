@@ -1,26 +1,20 @@
 #!/bin/bash
 clear
-progress.sh "Checking for System Vulnerabilities...."
+progress.sh "Checking for System Vulnaribilities...."
 progress.sh "Checking for Network Loopholes...."
 progress.sh "Setting up Exploits...."
 progress.sh "Extracting Payloads...."
 progress.sh "Completing Initialisation...."
 echo 'MIST Shell Initialised'
 sleep 0.25
-rr.sh /home/anuraag/Documents/Projects/Shell/mist_pres/text_art
+rr.sh /home/anuraag/Documents/Projects/Scripts/mist_pres/text_art
 printf 'Enter Username: '
 read username
 printf 'Enter Password: '
 read -s password
 if [ "$username" = "darkoperator" ] && [ "$password" = "password" ]; then 
     echo ' '
-    echo 'Login Successful'
-    sleep 0.25
-    mist_next.sh  
-fi;
-if [ "$username" = "/" ] && [ "$password" = "rootisdead" ]; then
-	echo ' '
-    echo 'Login Successful'
+    echo 'Login Succesful'
     sleep 0.25
     mist_next.sh  
 fi;
